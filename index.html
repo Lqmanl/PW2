@@ -1,79 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bloom College Registration Form</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
-    <h1>Bloom College</h1>
-    <h2>Student Registration Form</h2>
-    <form id="registrationForm">
-      <!-- semua form sama seperti sebelum ini -->
-      <label>Student Image:</label>
-      <input type="file" accept="image/*">
-      <small>(less than 5 Mb)</small>
-       <label>Student Name:</label>
-      <input type="text" placeholder="Full Name" required>
-      <label>Father's Name:</label>
-      <input type="text" placeholder="Father's Full Name" required>
 
-      <label>Mother's Name:</label>
-      <input type="text" placeholder="Mother's Full Name" required>
+    <div class="container">
+      <h1>Bloom College</h1>
+      <h2>Student Registration Form</h2>
 
-      <label>Gender:</label>
-      <div class="radio-group">
-        <input type="radio" name="gender" value="Male" required> Male
-        <input type="radio" name="gender" value="Female" required> Female
-      </div>
+      <form id="registrationForm">
+        <label>Student Image:</label>
+        <input type="file" accept="image/*">
+        <small>(less than 5 Mb)</small>
 
-      <label>Date of Birth:</label>
-      <input type="date" required>
+        <label>Student Name:</label>
+        <input type="text" placeholder="Full Name" required>
 
-      <label>Email:</label>
-      <input type="email" placeholder="email@xyz.com" required>
+        <label>Father's Name:</label>
+        <input type="text" placeholder="Father's Full Name" required>
 
-      <label>Level:</label>
-      <select required>
-        <option value="">Select Level</option>
-        <option value="Diploma">Diploma</option>
-        <option value="Degree">Degree</option>
-        <option value="Masters">Masters</option>
-        <option value="PhD">PhD</option>
-      </select>
+        <label>Mother's Name:</label>
+        <input type="text" placeholder="Mother's Full Name" required>
 
-      <label>Department:</label>
-      <select required>
-        <option value="">Select Department</option>
-        <option>Computer Engineering</option>
-        <option>Information Technology</option>
-        <option>Electrical Engineering</option>
-        <option>Mechanical Engineering</option>
-      </select>
+        <label>Gender:</label>
+        <div class="radio-group">
+          <input type="radio" name="gender" value="Male" required> Male
+          <input type="radio" name="gender" value="Female" required> Female
+        </div>
 
-      <label>Tel/Mobile:</label>
-      <input type="text" placeholder="0xx-xxxxxxx" required>
+        <label>Date of Birth:</label>
+        <input type="date" required>
 
-      <fieldset>
-        <legend>Address</legend>
-        <label>State:</label>
-        <input type="text" placeholder="State" required>
+        <label>Email:</label>
+        <input type="email" placeholder="email@xyz.com" required>
 
-        <label>City:</label>
-        <input type="text" placeholder="City" required>
+        <label>Level:</label>
+        <select required>
+          <option value="">Select Level</option>
+          <option value="Diploma">Diploma</option>
+          <option value="Degree">Degree</option>
+          <option value="Masters">Masters</option>
+          <option value="PhD">PhD</option>
+        </select>
 
-        <label>Postcode:</label>
-        <input type="text" placeholder="Postcode" required>
-      </fieldset>
+        <label>Department:</label>
+        <select required>
+          <option value="">Select Department</option>
+          <option>Computer Engineering</option>
+          <option>Information Technology</option>
+          <option>Electrical Engineering</option>
+          <option>Mechanical Engineering</option>
+        </select>
 
-      <div class="buttons">
-        <input type="submit" value="Register">
-        <input type="reset" value="Reset">
-      </div>
-    </form>
-  </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <label>Tel/Mobile:</label>
+        <input type="text" placeholder="0xx-xxxxxxx" required>
+
+        <fieldset>
+          <legend>Address</legend>
+          <label>State:</label>
+          <input type="text" placeholder="State" required>
+
+          <label>City:</label>
+          <input type="text" placeholder="City" required>
+
+          <label>Postcode:</label>
+          <input type="text" placeholder="Postcode" required>
+        </fieldset>
+
+        <div class="buttons">
+          <input type="submit" value="Register">
+          <input type="reset" value="Reset">
+        </div>
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
