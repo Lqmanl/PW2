@@ -13,30 +13,19 @@ function toUpperCaseInput(id) {
   };
 }
 
-// Image preview feature
-document.getElementById("studentImage").addEventListener("change", function (event) {
+function previewImage(event) {
   const file = event.target.files[0];
-  const preview = document.getElementById("imagePreview");
+  const reader = new FileReader();
+
+  reader.onload = function() {
+    const output = document.getElementById('studentImage');
+    output.src = reader.result; 
+  }
 
   if (file) {
-    // Make sure it's an image
-    if (file.type.startsWith("image/")) {
-      const reader = new FileReader();
-      reader.onload = function (e) {
-        preview.src = e.target.result;
-        preview.classList.remove("d-none"); // show the image
-      };
-      reader.readAsDataURL(file);
-    } else {
-      alert("Please select an image file only.");
-      preview.src = "#";
-      preview.classList.add("d-none");
-    }
-  } else {
-    preview.src = "#";
-    preview.classList.add("d-none");
+    reader.readAsDataURL(file); 
   }
-});
+}
 
 toUpperCaseInput("studentName");
 toUpperCaseInput("fatherName");
@@ -50,6 +39,6 @@ document.getElementById("registerBtn").addEventListener("click", function () {
       "✅ Your details have been saved!";
     myModal.show();
   } else {
-    form.reportValidity(); // show built-in HTML5 validation errors
+    form.reportValidity(); 
   }
 })

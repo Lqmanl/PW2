@@ -5,8 +5,8 @@ body {
     padding: 20px 0;
     min-height: 100vh;
     position: relative;
-    overflow-x: hidden; /* only hides side scrolling */
-    overflow-y: auto;   /* allows up-down scrolling */
+    overflow-x: hidden; 
+    overflow-y: auto;   
 }
 /* Background Image with Blur Effect */
 body::before {
@@ -99,8 +99,8 @@ select:focus {
 fieldset {
   border: 1px solid #ccc;
   border-radius: 10px;
-  padding: 25px 20px 20px; /* tambah ruang atas lebih besar */
-  margin-top: 30px; /* jarak antara fieldset & input atas */
+  padding: 25px 20px 20px; 
+  margin-top: 30px; 
   background-color: #f8f9fa;
   position: relative;
 }
@@ -115,7 +115,7 @@ legend {
   padding: 0 10px;
   margin-bottom: 10px;
   position: relative;
-  top: 5px; /* tolak sikit ke bawah bagi nampak ruang */
+  top: 5px; 
 }
 
 /* Buttons Container */
